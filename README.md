@@ -13,3 +13,15 @@ graph TD
     A3 --> SY
     SY --> WS[WebSocket Server]
     WS --> R[React Frontend]
+
+## Quickstart
+```bash
+git clone [https://github.com/venkatasivanaga/AgentOS.git](https://github.com/venkatasivanaga/AgentOS.git)
+cd AgentOS
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+npm install
+npm run start:ws
+Test Coverage
+40 tests covering routing, tool calls, and failure recovery.
