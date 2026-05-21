@@ -20,12 +20,12 @@ graph TD
 ```
 
 ## Quickstart
-git clone https://github.com/venkatasivanaga/AgentOS.git
-cd AgentOS
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-npm install
-npm run start:ws
+- git clone https://github.com/venkatasivanaga/AgentOS.git
+- cd AgentOS
+- python -m venv venv
+- source venv/bin/activate
+- pip install -r requirements.txt
+- npm install
+- npm run start:ws
 ## Test Coverage
 40 tests covering routing, tool calls, and failure recovery.
