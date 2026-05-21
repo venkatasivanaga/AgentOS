@@ -1,5 +1,5 @@
 from langchain_openai import ChatOpenAI
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 
 class SalesforceSummarizeAgent:
     """Transforms raw Salesforce JSON payloads into formatted executive briefings."""
