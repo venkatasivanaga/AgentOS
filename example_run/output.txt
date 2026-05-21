@@ -1,0 +1,4 @@
+Salesforce Competitor AI Strategies:
+1. Microsoft (Dynamics 365): Heavy integration with Copilot.
+2. Oracle (CX): Embedding generative AI for sales automation.
+3. HubSpot: Using AI (ChatSpot) for content generation and CRM querying.

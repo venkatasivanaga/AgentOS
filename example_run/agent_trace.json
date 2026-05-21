@@ -1,0 +1,8 @@
+[
+  {
+    "step": 1,
+    "agent": "supervisor",
+    "action": "decomposed task into 4 subtasks",
+    "duration_ms": 1200
+  }
+]
