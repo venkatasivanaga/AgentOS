@@ -4,7 +4,8 @@
   "description": "Multi-Agent Workflow Orchestrator",
   "scripts": {
     "start:ws": "ts-node server/websocket_server.ts",
-    "test": "jest"
+    "test": "jest",
+    "dev": "vite"
   },
   "dependencies": {
     "ws": "^8.16.0"
@@ -13,11 +14,13 @@
     "@types/jest": "^30.0.0",
     "@types/react": "^18.2.48",
     "@types/ws": "^8.5.10",
+    "@vitejs/plugin-react": "^6.0.2",
     "jest": "^30.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ts-jest": "^29.4.11",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vite": "^8.0.14"
   }
 }
