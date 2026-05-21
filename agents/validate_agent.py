@@ -1,4 +1,4 @@
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from pydantic import BaseModel, Field
 
 class TrustValidationSchema(BaseModel):
@@ -10,7 +10,7 @@ class EinsteinTrustValidator:
     """Emulates the Salesforce Trust Layer to prevent hallucinations and data leaks."""
     
     def __init__(self):
-        self.llm = ChatOpenAI(model="gpt-4-turbo-preview", temperature=0)
+        self.llm = ChatGoogleGenerativeAI(model="gemini-3.5-flash", temperature=0.2)
         self.structured_llm = self.llm.with_structured_output(TrustValidationSchema)
 
     def execute(self, summary: str, original_data: str) -> dict:

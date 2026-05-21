@@ -1,11 +1,11 @@
 import json
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
 from schemas.routing import ExecutionPlan
 
 class SupervisorAgent:
     def __init__(self):
-        self.llm = ChatOpenAI(model="gpt-4-turbo-preview", temperature=0)
+        self.llm = ChatGoogleGenerativeAI(model="gemini-3.5-flash", temperature=0.2)
         self.structured_llm = self.llm.with_structured_output(ExecutionPlan)
         self.system_prompt = """You are the Supervisor Agent of AgentOS. 
         Break down complex user requests into smaller subtasks using these agents:

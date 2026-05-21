@@ -1,17 +1,36 @@
-# Node
-node_modules/
-dist/
-
-# Python
-__pycache__/
-*.py[cod]
-venv/
-.env
-.pytest_cache/
-
-# OS
+# ========================
+# OS & IDE Artifacts
+# ========================
 .DS_Store
-
-# IDEs
 .vscode/
 .idea/
+*.swp
+
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.local
+secrets.json
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.pytest_cache/
+.coverage
+dist/
+build/
+
+# ========================
+# Node / Frontend
+# ========================
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
