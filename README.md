@@ -17,6 +17,8 @@ graph TD
     A3 --> SY
     SY --> WS[WebSocket Server]
     WS --> R[React Frontend]
+```
+
 ## Quickstart
 git clone https://github.com/venkatasivanaga/AgentOS.git
 cd AgentOS
